@@ -36,7 +36,7 @@ int main(int argc, char* argv[]) {
 
 		finderFunc();
 	}
-
+	
 
 
 	else if (argc == 3)
@@ -98,13 +98,13 @@ int main(int argc, char* argv[]) {
 void finderFunc() {
 	std::string dataset_f = "", input_f = "";
 
-	while (dataset_f.length() == 0)
+	while (dataset_f.length() == 0) // only accept strings with the length of more than zero
 	{
 		std::cout << "Give a string from which to search for: ";
 		getline(std::cin, dataset_f);
 	}
 
-	while (input_f.length() == 0 || input_f.length() > dataset_f.length()) // only accept strings with the length of more than zero, and less or equal to the dataset length
+	while (input_f.length() == 0) // only accept strings with the length of more than zero
 	{
 		std::cout << "Give search string: ";
 		getline(std::cin, input_f);
