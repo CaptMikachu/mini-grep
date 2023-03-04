@@ -201,12 +201,9 @@ void finderFuncBasicArgs(std::string searchTerm_f, std::string fileName_f) {
 void finderFuncExtendedArgs(std::string extArgs_f, std::string searchTerm_f, std::string fileName_f) {
 
 
-	//std::cout << extArgs_f << std::endl;
+
 
 	extArgs_f.erase(0, 2); // omit the first 2 characters from the extArgs-string, them being '-o'
-
-
-	//std::cout << extArgs_f << std::endl;
 
 
 	size_t
@@ -223,14 +220,6 @@ void finderFuncExtendedArgs(std::string extArgs_f, std::string searchTerm_f, std
 	unsigned int
 		lineNum = 0,
 		occurrences = 0;
-
-
-
-
-	if (foundOccurrence != std::string::npos)
-	{
-
-	}
 
 
 
