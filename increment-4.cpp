@@ -326,7 +326,18 @@ void finderFuncExtendedArgs(std::string extArgs_f, std::string searchTerm_f, std
 
 	if (foundOccurrence != std::string::npos) // if the argument 'o' is found, print the occurrences too
 	{
-		std::cout << std::endl << std::endl << "Occurrences of lines containing '" << searchTerm_f << "': " << occurrences << std::endl;
+		if (foundReverse != std::string::npos)
+		{
+
+			std::cout << std::endl << std::endl << "Occurrences of lines NOT containing '" << searchTerm_f << "': " << occurrences << std::endl;
+		}
+
+		else
+		{
+			std::cout << std::endl << std::endl << "Occurrences of lines containing '" << searchTerm_f << "': " << occurrences << std::endl;
+		}
+
+
 	}
 
 
